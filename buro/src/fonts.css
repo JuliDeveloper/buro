@@ -1,0 +1,35 @@
+@font-face {
+    font-family: 'ProximaNova';
+    src: url('./fonts/proxima_nova/proxima_nova.eot'),
+         url('./fonts/proxima_nova/proxima_nova.ttf'),
+         url('./fonts/proxima_nova/proxima_nova.woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ProximaNovaBold';
+    src: url('./fonts/proxima_nova/ProximaNova-Bold.eot'),
+         url('./fonts/proxima_nova/ProximaNova-Bold.ttf'),
+         url('./fonts/proxima_nova/ProximaNova-Bold.woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: '21Cent';
+    src: url('./fonts/21_cent/21Cent.eot'),
+         url('./fonts/21_cent/21Cent.ttf'),
+         url('./fonts/21_cent/21Cent.woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: '21CentBold';
+    src: url('./fonts/21_cent/21Cent-Bold.eot'),
+         url('./fonts/21_cent/21Cent-Bold.ttf'),
+         url('./fonts/21_cent/21Cent-Bold.woff');
+    font-weight: bold;
+    font-style: normal;
+}

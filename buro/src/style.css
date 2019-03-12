@@ -1,0 +1,18 @@
+@import './css-reset.css';
+@import './fonts.css';
+:root {
+    --white: #fff;
+    --black: #000;
+    --almostBlack: #1a1a1a;
+    --red: #ff0000;
+    --smokyWhite: #f6f6f6;
+    --motherOfPearlLightGray: #999999;
+    --wetAsphalt: #4d4d4d;
+    --lightGrey: #e2e2e2;
+    --seaWave: #376d95;
+    --champagne: #fcf9ec;
+    --whiteAluminum: #a5a5a5;
+    --gainsborough: #e5e5e5;
+    --darkAzure: #0d4f80;
+    --gentianBlue: #0a314e;
+}

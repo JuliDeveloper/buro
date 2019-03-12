@@ -1,5 +1,5 @@
 import React, { Fragment } from 'react';
-import './css-reset.css';
+import './style.css';
 import './App.css';
 
 function App() {
