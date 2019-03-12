@@ -1,0 +1,30 @@
+.menu {
+    max-width: 1920px;
+    margin: 0 auto;
+    border-top:1px solid var(--lightGrey);
+    border-bottom: 1px solid var(--lightGrey);  
+}
+
+.menu__list {
+    max-width: 1360px;
+    display: flex;
+    margin: 0 auto;
+}
+
+.menu__list_item {
+    padding: 22px 0;
+    font: 14px 'ProximaNovaBold';
+    color: var(--almostBlack);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    cursor: pointer;
+    border-bottom: 1px solid transparent;
+}
+
+.menu__list_item + .menu__list_item {
+    margin: 0 0 0 33px;
+}
+
+.menu__list_item:hover {
+    border-bottom: 1px solid var(--red);
+} 
