@@ -1,0 +1,33 @@
+.project__box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 0 19px;
+    border-bottom: 1px solid var(--lightGrey);
+}
+
+.project__title {
+    font: 16px 'ProximaNovaBold';
+    color: var(--almostBlack);
+}
+
+.project__arrow {
+    background: url(../../images/arrow.svg) no-repeat;
+    width: 18px;
+    height: 14px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.project__text {
+    margin-top: 17px;
+    font: 16px/20px '21Cent';
+    color: var(--wetAsphalt);
+}
+
+.project__link {
+    font: 16px/20px 'ProximaNova';
+    color: var(--seaWave);
+    text-decoration: none;
+}
