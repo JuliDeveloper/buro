@@ -1,0 +1,13 @@
+.article__author {
+    font: 15px 'ProximaNova';
+    letter-spacing: -0.03em;
+    color: var(--motherOfPearlLightGray);
+    margin: 16px 0 0;
+    display: block;
+}
+
+.article__text {
+    font: 16px/20px '21Cent';
+    color: var(--wetAsphalt);
+    margin: 17px 0 0;
+}
