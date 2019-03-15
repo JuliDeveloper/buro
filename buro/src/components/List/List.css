@@ -1,0 +1,30 @@
+.list {
+    max-width: 213px;
+    min-height: 190px;
+    position: relative;
+}
+
+.list__title {
+    font: 12px 'ProximaNovaBold';
+    letter-spacing: 2px;
+    color: var(--almostBlack);
+    text-transform: uppercase;
+}
+
+.list__box {
+    
+}
+
+.list__box_item {
+    margin: 10px 0 0;
+}
+
+.list__box_item-link {
+    font: 16px/20px 'ProximaNova';
+    color: var(--seaWave);
+    text-decoration: none;
+}
+
+.list__box_item-link:hover {
+    text-decoration: underline;
+}
