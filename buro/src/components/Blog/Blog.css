@@ -1,10 +1,12 @@
 .blog {
     max-width: 1360px;
-    margin: 0 auto 0;
+    min-width: 1021px;
+    margin: 0 auto;
 }
 
 .blog__articles {
     max-width: 933px;
+    margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 315px;
@@ -80,6 +82,17 @@
     position: absolute;
     top: -20px;
     left: 0;
+}
+
+.middle__one::after {
+    content: '';
+    display: block;
+    width: 1px;
+    height: 286px;
+    background: var(--lightGrey);
+    position: absolute;
+    top: 0;
+    right: -20px;
 }
 
 .middle__two {
