@@ -114,6 +114,14 @@
     margin: 18px 0 0;
 }
 
+.subtitle__normal:hover,
+.subtitle__big-image:hover,
+.title__normal:hover,
+.title__big:hover {
+    text-decoration: underline;
+    cursor: default;
+}
+
 .title__normal {
     font: 21px/25px '21CentBold';
     letter-spacing: 0.02em;
