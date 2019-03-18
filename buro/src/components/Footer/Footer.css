@@ -40,8 +40,8 @@
 .footer__lists {
     max-width: 1360px;
     margin: 19px auto 0;
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
 }
 
 .list__border::before {
@@ -53,4 +53,70 @@
     position: absolute;
     top: 0;
     left: -20px;
+}
+
+@media(max-width:1020px) {
+    .footer {
+        max-width:1020px;
+        min-width:1020px;
+    }
+
+    .footer__up {
+        max-width:1020px;
+        min-width:1020px;
+        padding: 19px 30px 21px;
+    }
+
+    .footer__lists {
+        max-width:1020px;
+        min-width:1020px;
+        padding: 0 30px;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-areas: 'a b c d'
+                   'e e f f';
+        grid-row-gap: 60px;
+    }
+
+    .grid_a {
+        grid-area: a;
+    }
+
+    .grid_a::after {
+        content: '';
+        display: block;
+        width: 1020px;
+        height: 1px;
+        background: var(--lightGrey);
+        position: absolute;
+        bottom: -30px;
+        left: 0;
+    }
+
+    .grid_b {
+        grid-area: b;
+    }
+
+    .grid_c {
+        grid-area: c;
+    }
+
+    .grid_d {
+        grid-area: d;
+    }
+
+    .grid_e {
+        grid-area: e;
+    }
+
+    .grid_e::before {
+        display: none;
+    }
+
+    .grid_f {
+        grid-area: f;
+    }
+
+    .grid_f::before {
+        height: 130px;
+    }
 }

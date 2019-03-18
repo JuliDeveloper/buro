@@ -28,3 +28,8 @@
 .list__box_item-link:hover {
     text-decoration: underline;
 }
+@media(max-width:1020px) {
+    .list {
+        max-width: 248px;
+    }
+}
