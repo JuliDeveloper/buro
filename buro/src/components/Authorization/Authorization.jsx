@@ -36,6 +36,7 @@ function Authorization() {
                 <button className='band__block_button-subscribe button'>Подпишись</button>
             </div>
             <div className='band__block_buttons'>
+                <label for="singIn" className='band__block_buttons-avatar'></label>
                 <label for="singIn" className='band__block_buttons-singIn button'>Войти</label>
                 <button className='band__block_buttons-singUp button'>Создать аккаунт</button>
                 <button className='band__block_buttons-subscription'>подписка</button>
