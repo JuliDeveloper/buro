@@ -99,6 +99,7 @@
         position: absolute;
         right: -100%;
         z-index: 3;
+        overflow: scroll;
     }
 
     #menu:checked ~ .menu__background > .menu__container {

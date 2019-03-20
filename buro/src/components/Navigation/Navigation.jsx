@@ -21,12 +21,12 @@ function Navigation() {
                 <a className='link__start-page' href="#">Главная</a>
                 <ul className='menu__list'>
 
-                    <input type="checkbox" name="arrow1" id="arrow1" hidden />
-                    <input type="checkbox" name="arrow2" id="arrow2" hidden />
-                    <input type="checkbox" name="arrow3" id="arrow3" hidden />
-                    <input type="checkbox" name="arrow4" id="arrow4" hidden />
-                    <input type="checkbox" name="arrow5" id="arrow5" hidden />
-                    <input type="checkbox" name="arrow6" id="arrow6" hidden />
+                    <input type="checkbox" name="arrow" id="arrow1" hidden />
+                    <input type="checkbox" name="arrow" id="arrow2" hidden />
+                    <input type="checkbox" name="arrow" id="arrow3" hidden />
+                    <input type="checkbox" name="arrow" id="arrow4" hidden />
+                    <input type="checkbox" name="arrow" id="arrow5" hidden />
+                    <input type="checkbox" name="arrow" id="arrow6" hidden />
 
 
                     <li className='menu__list_item menu__list_item-fashion'>

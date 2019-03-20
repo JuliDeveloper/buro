@@ -25,3 +25,11 @@
         height: 60px;
     }
 }
+
+@media(max-width: 320px) {
+    .block__logo_image {
+        width: 84px;
+        height: 30px;
+        background: url(../../images/logo_mobile.svg) no-repeat;
+    }
+}
