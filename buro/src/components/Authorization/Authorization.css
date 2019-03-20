@@ -18,7 +18,6 @@
     position: fixed;
     background: rgba(0, 0, 0, 0.6);
     z-index: 1;
-    position: absolute;
     display: none;
 }
 
@@ -184,16 +183,16 @@
 .band__block_buttons {
     margin-left: auto;
     position: relative;
+    display: flex;
+    align-items: center;
 }
 
 .band__block_buttons-avatar {
     width: 15px;
     height: 15px; 
     display: block;
-    background: url(../../images/avatar.svg) no-repeat;  
-    position: absolute;
-    top: 12px;
-    left: -9px;
+    background: url(../../images/avatar.svg) no-repeat;
+    cursor: pointer;
 }
 
 .band__block_buttons-singIn {
@@ -216,9 +215,13 @@
 
 @media(max-width:1020px) {
     .band {
-        max-width: 1020px;
         background: var(--white);
-        margin: -13px 0 0 0;
+        margin: 0 20px 0 auto;
+    }
+
+    #singIn:checked ~ .band__popup {
+        top: 0;
+        right: 0;
     }
 
     .band__popup {

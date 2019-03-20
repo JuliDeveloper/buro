@@ -1,26 +1,9 @@
-.header__tablet {
-    display: none;
-}
-
 @media(max-width: 1020px) {
-    .header__desktop {
-        display: none;
-    }
-
-    .header__tablet {
-        display: block;
-        max-width: 1020px;
-        padding: 20px 30px;
+    .header {
         display: flex;
-        justify-content: space-between;
-        align-items: center;
-        border-bottom: 1px solid var(--lightGrey);
-    }
-
-    .header__tablet_box {
-        width: 50px;
-        display: flex;
-        justify-content: space-between;
+        padding: 0 40px 40px;
+        margin: 35px 0 0;
+        border-bottom: 1px solid var(--lightGrey); 
     }
 
 }
