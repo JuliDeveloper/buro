@@ -63,3 +63,32 @@
         margin: 0;
     } 
 }
+
+@media(max-width: 320px) {
+    .block {
+        min-width: 320px;
+        display: block;
+        padding: 0 15px;
+        margin: 51px 0 0;
+    }
+
+    .block__project {
+        width: 290px;
+    }
+
+    .block__project + .block__project {
+        margin: 30px 0 0;
+    } 
+
+    .image {
+        right: 15px;
+    }
+
+    .probleski_port {
+        margin: 0;
+    }
+
+    .awards_2018 {
+        right: 0;
+    }
+}
