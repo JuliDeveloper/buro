@@ -206,3 +206,71 @@
         margin-top: 69px;
     }
 }
+
+@media(max-width: 320px) {
+    .blog {
+        max-width: 320px;
+        min-width: 320px;
+        margin: 0;
+        padding: 0 15px;
+    }
+
+    .blog__articles {
+        max-width: 320px;
+        display: block;
+    }
+
+    .article {
+        margin: 14px 0 0;
+    }
+
+    .small__one {
+        margin: 24px 0 0;
+    }
+
+    .small__two {
+        border-bottom: 1px solid var(--lightGrey);
+    }
+
+    .article__big{
+        border-bottom: 1px solid var(--lightGrey);
+    }
+
+    .article__big::before {
+        display: none;
+    }
+
+    .image3 {
+        height: 174px;
+    }
+
+    .title__big {
+        font: 28px/35px '21CentBold';
+    }
+
+    .date__big {
+        margin-top: 29px; 
+    }
+
+    .middle__one {
+        padding: 0;
+        border-bottom: 1px solid var(--lightGrey);
+    }
+
+    .middle__one::before {
+        display: none;
+    }
+
+    .middle__one::after {
+        display: none;
+    }
+
+    .margin__bottom {
+        margin-bottom: 15px; 
+    }
+
+    .date__last {
+        margin-top: 29px; 
+        margin-bottom: 0;
+    }
+}
