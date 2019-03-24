@@ -1,0 +1,94 @@
+.block {
+    margin: 66px 0 0 20px;
+}
+
+.block__project {
+    width: 427px;
+    min-height: 189px;
+    border-top: 1px solid var(--black);
+    padding: 14px 0 0;
+    position: relative;
+}
+
+.block__project + .block__project {
+    margin: 21px 0 0;
+} 
+
+.background__white {
+    background: var(--white);
+}
+
+.background__grey {
+    background: var(--smokyWhite);
+}
+
+.image {
+    position: absolute;
+    top: 69px;
+    right: 20px;
+}
+
+.probleski_port {
+    background: url(../../images/probleski_port.svg) no-repeat;
+    width: 97px;
+    height: 97px;
+    margin-right: 20px;
+}
+
+.awards_2018 {
+    background: url(../../images/awards2018.svg) no-repeat;
+    width: 117px;
+    height: 66px;
+}
+
+.margin {
+    margin-left: 16px;
+    margin-right: 16px;
+}
+
+@media(max-width: 1020px) {
+    .block {
+        min-width: 1020px;
+        display: flex;
+        margin-left: 0;
+        padding: 0 30px; 
+        justify-content: space-between;
+    }
+
+    .block__project {
+        width: 495px;
+    }
+
+    .block__project + .block__project {
+        margin: 0;
+    } 
+}
+
+@media(max-width: 320px) {
+    .block {
+        min-width: 320px;
+        display: block;
+        padding: 0 15px;
+        margin: 51px 0 0;
+    }
+
+    .block__project {
+        width: 290px;
+    }
+
+    .block__project + .block__project {
+        margin: 30px 0 0;
+    } 
+
+    .image {
+        right: 15px;
+    }
+
+    .probleski_port {
+        margin: 0;
+    }
+
+    .awards_2018 {
+        right: 0;
+    }
+}
