@@ -1,6 +1,4 @@
 .list {
-    max-width: 213px;
-    min-height: 190px;
     position: relative;
 }
 
@@ -9,10 +7,6 @@
     letter-spacing: 2px;
     color: var(--almostBlack);
     text-transform: uppercase;
-}
-
-.list__box {
-    
 }
 
 .list__box_item {
@@ -27,9 +21,4 @@
 
 .list__box_item-link:hover {
     text-decoration: underline;
-}
-@media(max-width:1020px) {
-    .list {
-        max-width: 248px;
-    }
 }
