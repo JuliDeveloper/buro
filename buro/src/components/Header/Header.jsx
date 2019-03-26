@@ -4,12 +4,12 @@ import Authorization from '../Authorization/Authorization.jsx';
 import Logo from '../Logo/Logo.jsx';
 import Navigation from '../Navigation/Navigation.jsx';
 
-function Header() {
-    return <div className='header'>
+const Header = () => {
+    return <header className='header'>
         <Authorization />
         <Logo />
         <Navigation />
-    </div>
+    </header>
 }
 
 export default Header;
