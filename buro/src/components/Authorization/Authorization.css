@@ -2,6 +2,7 @@
     max-width: 1920px;
     margin: 0 auto;
     background: var(--smokyWhite);
+    padding: 0 10px;
 }
 
 #singIn:checked ~ .band__popup {

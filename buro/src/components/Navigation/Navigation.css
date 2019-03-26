@@ -2,7 +2,8 @@
     max-width: 1920px;
     margin: 0 auto;
     border-top:1px solid var(--lightGrey);
-    border-bottom: 1px solid var(--lightGrey);  
+    border-bottom: 1px solid var(--lightGrey);
+    padding: 0 10px;
 }
 
 .menu__open {
