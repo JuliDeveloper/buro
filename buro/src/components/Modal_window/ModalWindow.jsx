@@ -9,16 +9,16 @@ const ModalWindow = () => {
         <div className='band__popup'>
             <div className='band__popup_plate'>
                 <h2 className='plate__title'>Войти</h2>
-                <label className='plate__input_close' for="singIn"></label>
+                <label className='plate__input_close' htmlFor="singIn"></label>
 
-                <label className='plate__text' for="email">Ваш e-mail</label>
+                <label className='plate__text' htmlFor="email">Ваш e-mail</label>
                 <input className='input' type="text" name="" id="email" required />
                 
-                <label className='plate__text password' for="password">Пароль</label>
+                <label className='plate__text password' htmlFor="password">Пароль</label>
                 <input className='input' type="password" name="" id="password" required />
 
                 <input type="checkbox" name="" id="remember" hidden/>
-                <label className='plate__text remember' for="remember">Запомнить меня</label>
+                <label className='plate__text remember' htmlFor="remember">Запомнить меня</label>
 
                 <button className='plate__singIn'>Войти</button>
                 <div className='plate__link'>

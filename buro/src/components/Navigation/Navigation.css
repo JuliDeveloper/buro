@@ -199,6 +199,10 @@
         right: 22px;
     }
 
+    .link__start-page::after {
+        display: none;
+    }
+
     #arrow1:checked ~ .menu__list_item-fashion,
     #arrow2:checked ~ .menu__list_item-culture,
     #arrow3:checked ~ .menu__list_item-beauty,

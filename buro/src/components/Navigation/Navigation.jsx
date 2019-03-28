@@ -18,7 +18,6 @@ function Navigation() {
                     </form>
                     <label className='menu__close' htmlFor="menu"></label>
                 </div>
-                <a className='link__start-page' href="#">Главная</a>
                 <ul className='menu__list'>
 
                     <input type="radio" name="arrow" id="arrow1" hidden />
@@ -28,7 +27,7 @@ function Navigation() {
                     <input type="radio" name="arrow" id="arrow5" hidden />
                     <input type="radio" name="arrow" id="arrow6" hidden />
 
-
+                    <li><a className='menu__list_item_link link__start-page' href="#">Главная</a></li>
                     <li className='menu__list_item menu__list_item-fashion'>
                         <label htmlFor='arrow1' className='menu__list_item_link arrow_1'>Мода</label>
                         <ul className='submenu submenu__fashion'>
