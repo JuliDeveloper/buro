@@ -1,0 +1,35 @@
+.block__logo {
+    max-width: 1360px;
+    margin: 0 auto;
+    padding: 30px 10px;
+}
+
+.block__logo_image {
+    background: url(../../images/logo.svg) no-repeat;
+    width: 185px;
+    height: 80px;
+    display: block;
+}
+
+@media(max-width: 1020px) {
+    .block__logo {
+        max-width: 1020px;
+        margin: 0;
+        padding: 0;
+        position: absolute;
+        top: 15px;
+    }
+
+    .block__logo_image {
+        width: 168px;
+        height: 60px;
+    }
+}
+
+@media(max-width: 320px) {
+    .block__logo_image {
+        width: 84px;
+        height: 30px;
+        background: url(../../images/logo_mobile.svg) no-repeat;
+    }
+}

@@ -1,0 +1,281 @@
+.menu {
+    max-width: 1920px;
+    margin: 0 auto;
+    border-top:1px solid var(--lightGrey);
+    border-bottom: 1px solid var(--lightGrey);
+    padding: 0 10px;
+}
+
+.menu__open {
+    display: none;
+}
+
+.box {
+    display: none;
+}
+
+.link__start-page {
+    display: none;
+}
+
+.menu__list {
+    max-width: 1360px;
+    display: flex;
+    margin: 0 auto;
+}
+
+.menu__list_item {
+    padding: 22px 0;
+    cursor: pointer;
+    border-bottom: 1px solid transparent;
+}
+
+.menu__list_item_link {
+    font: 14px 'ProximaNovaBold';
+    color: var(--almostBlack);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.menu__list_item + .menu__list_item {
+    margin: 0 0 0 33px;
+}
+
+.menu__list_item:hover {
+    border-bottom: 1px solid var(--red);
+} 
+
+.submenu {
+    display: none;
+}
+
+
+@media(max-width: 1020px) {
+    .menu {
+        margin: 0;
+        border: none; 
+        position: relative;
+    }
+
+    .menu__open {
+        display: block;
+        width: 18px;
+        height: 12px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        cursor: pointer;
+    }
+
+    .menu__open_line::before {
+        content: '';
+        display: block;
+        width: 18px;
+        height: 2px;
+        background: var(--black);
+    }
+
+    .menu__background {
+        width: 100vw;
+        height: 100vh;
+        position: fixed;
+        z-index: 1;
+        background: rgba(0, 0, 0, 0.6);
+        display: none;
+    }
+
+    #menu:checked ~ .menu__background {
+        display: block;
+        top: 0;
+        left: 0;
+    }
+
+    .menu__container {
+        width: 320px;
+        height: 100%;
+        display: none;
+        background: var(--white);
+        position: absolute;
+        right: -100%;
+        z-index: 3;
+        overflow: scroll;
+    }
+
+    #menu:checked ~ .menu__background > .menu__container {
+        display: block;
+        top: 0;
+        right: 0;
+    }
+
+    .box {
+        display: flex;
+        position: relative;
+        border-bottom: 1px solid var(--lightGrey);
+        background: var(--white);
+    }
+
+    .box__form {
+        width: 264px;
+        height: 56px;
+        position: relative;
+        border-right: 1px solid var(--lightGrey);
+    }
+
+    .box__search {
+        width: 243px;
+        height: 100%;
+        outline: none;
+        padding: 0 0 0 15px;
+        background: var(--white);
+        font: 15px 'ProximaNova';
+        letter-spacing: -0.03em;
+        color: var(--motherOfPearlLightGray);
+        border: none;
+    }
+
+    .box__search-image {
+        background: url(../../images/search.svg) no-repeat;
+        background-color: var(--white); 
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        top: 18px;
+        right: 20px;
+        cursor: pointer;
+    }
+
+    .menu__close {
+        background: url(../../images/input_close.svg) no-repeat;
+        width: 12px;
+        height: 12px;
+        position: absolute;
+        top: 22px;
+        right: 22px;
+        cursor: pointer;
+    }
+
+    .link__start-page {
+        display: block;
+        font: 14px 'ProximaNovaBold';
+        color: var(--almostBlack);
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        text-decoration: none;
+        padding: 16px 0 19px 15px;
+        border-bottom: 1px solid var(--lightGrey);
+    }
+
+    .menu__list {
+        max-width: 100%;
+        margin: 0;
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .menu__list_item {
+        padding: 16px 0 19px 15px;
+        border-bottom: 1px solid var(--lightGrey);
+        position: relative;
+    }
+
+    .menu__list_item + .menu__list_item {
+        margin-left: 0; 
+    }
+
+    .menu__list_item:hover {
+        border-bottom: 1px solid var(--lightGrey); 
+    }
+
+    .menu__list_item_link::after {
+        content: '';
+        display: block;
+        background: url(../../images/more_menu.svg) no-repeat;
+        width: 9px;
+        height: 14px;
+        position: absolute;
+        top: 16px;
+        right: 22px;
+    }
+
+    .link__start-page::after {
+        display: none;
+    }
+
+    #arrow1:checked ~ .menu__list_item-fashion,
+    #arrow2:checked ~ .menu__list_item-culture,
+    #arrow3:checked ~ .menu__list_item-beauty,
+    #arrow4:checked ~ .menu__list_item-technology,
+    #arrow5:checked ~ .menu__list_item-personality,
+    #arrow6:checked ~ .menu__list_item-video {
+        padding-bottom: 0; 
+    }
+
+    #arrow1:checked ~ .menu__list_item > .arrow_1,
+    #arrow2:checked ~ .menu__list_item > .arrow_2,
+    #arrow3:checked ~ .menu__list_item > .arrow_3,
+    #arrow4:checked ~ .menu__list_item > .arrow_4,
+    #arrow5:checked ~ .menu__list_item > .arrow_5,
+    #arrow6:checked ~ .menu__list_item > .arrow_6 {
+        color: var(--red);
+        padding-left: 20px; 
+    }
+
+    #arrow1:checked ~ .menu__list_item > .arrow_1::after,
+    #arrow2:checked ~ .menu__list_item > .arrow_2::after,
+    #arrow3:checked ~ .menu__list_item > .arrow_3::after,
+    #arrow4:checked ~ .menu__list_item > .arrow_4::after,
+    #arrow5:checked ~ .menu__list_item > .arrow_5::after,
+    #arrow6:checked ~ .menu__list_item > .arrow_6::after {
+        display: none;
+    }
+
+    #arrow1:checked ~ .menu__list_item > .arrow_1::before,
+    #arrow2:checked ~ .menu__list_item > .arrow_2::before,
+    #arrow3:checked ~ .menu__list_item > .arrow_3::before,
+    #arrow4:checked ~ .menu__list_item > .arrow_4::before,
+    #arrow5:checked ~ .menu__list_item > .arrow_5::before,
+    #arrow6:checked ~ .menu__list_item > .arrow_6::before {
+        content: '';
+        display: block;
+        background: url(../../images/more_menu_active.svg) no-repeat;
+        width: 9px;
+        height: 18px;
+        position: absolute;
+        top: 15px;
+        left: 15px;
+    }
+
+    #arrow1:checked ~ .menu__list_item > .submenu__fashion,
+    #arrow2:checked ~ .menu__list_item > .submenu__culture,
+    #arrow3:checked ~ .menu__list_item > .submenu__beauty,
+    #arrow4:checked ~ .menu__list_item > .submenu__technology,
+    #arrow5:checked ~ .menu__list_item > .submenu__personality,
+    #arrow6:checked ~ .menu__list_item > .submenu__video {
+        display: block;
+    }
+
+    .submenu {
+        display: none;
+        background: var(--smokyWhite);
+        padding: 0 0 0 15px;
+        margin: 17px 0 0 -15px;
+        border-top: 2px solid var(--lightGrey);
+    }
+
+    .submenu__item {
+        padding: 10px 0 0;
+    }
+
+    .submenu__item:nth-child(12),
+    .submenu__item_padding {
+        padding-bottom: 10px; 
+    } 
+
+    .submenu__item_link {
+        font: 16px/20px 'ProximaNova';
+        color: var(--seaWave);
+        text-decoration: none;
+    }
+}

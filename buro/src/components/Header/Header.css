@@ -1,0 +1,16 @@
+@media(max-width: 1020px) {
+    .header {
+        display: flex;
+        padding: 0 40px 40px;
+        margin: 35px 0 0;
+        border-bottom: 1px solid var(--lightGrey); 
+    }
+
+}
+
+@media(max-width: 320px) {
+    .header {
+        padding: 0 14px 20px;
+        margin: 26px 0 0;
+    }
+}

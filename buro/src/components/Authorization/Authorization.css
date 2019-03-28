@@ -1,0 +1,102 @@
+.band {
+    max-width: 1920px;
+    margin: 0 auto;
+    background: var(--smokyWhite);
+    padding: 0 10px;
+}
+
+#singIn:checked ~ .band__popup {
+    display: block;
+}
+
+#singIn:checked ~ .band__popup .band__popup_plate {
+    display: block;
+}
+
+.band__block {
+    max-width: 1360px;
+    margin: 0 auto;
+    display: flex;
+}
+
+.button {
+    padding: 10px 17px 10px 12px;
+    font: 16px/20px 'ProximaNova';
+    color: var(--seaWave);
+}
+
+.band__block_button-subscribe {
+    padding-left: 0;
+    padding-right: 0;
+    position: relative;
+}
+
+.band__block_button-subscribe::after{
+    content: '';
+    width: 10px;
+    height: 10px;
+    display: block;
+    background: url(../../images/arrow.svg) no-repeat;
+    position: absolute;
+    top: 8px;
+    right: -17px;
+}
+
+.band__block_buttons-singIn {
+    position: relative;
+    cursor: pointer;
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+}
+
+.band__block_buttons-avatar {
+    width: 15px;
+    height: 15px; 
+    display: block;
+    background: url(../../images/avatar.svg) no-repeat;
+    cursor: pointer;
+    margin: 0 7px 0 0;
+}
+
+.band__block_buttons-singUp {
+    background: var(--champagne);
+}
+
+.band__block_buttons-subscription {
+    font: 12px 'ProximaNova';
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--white);
+    background: var(--red);
+    padding: 14px 17px 11px 12px;
+}
+
+@media(max-width:1020px) {
+    .band {
+        background: var(--white);
+        margin: 0 20px 0 auto;
+    }
+
+    #singIn:checked ~ .band__popup {
+        top: 0;
+        right: 0;
+    }
+
+    .band__block {
+        max-width: 1020px;
+    }
+
+    .band__block_button {
+        display: none;
+    }
+
+    .button {
+        display: none;
+    }
+
+    .band__block_buttons-subscription {
+        display: none;
+    }
+}
